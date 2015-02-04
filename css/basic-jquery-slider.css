@@ -37,7 +37,7 @@ a.bjqs-next{
 
  ol.bjqs-markers{
   position:relative;
-  bottom:20px;
+  bottom:25px;
   right:10px;
   float:right;
 }
@@ -54,14 +54,17 @@ a.bjqs-next{
   overflow:hidden;
   text-align:center;
   border:1px solid #333;
-  font-size:0.7em;
-  padding:3px;
+  font-size:0.5em;
+  padding:4px;
   /*text-indent:-9999px; */
   background:#fff;
   border-radius:10px;
   /*box-shadow:0 0 50px rgba(0,0,0,0.5); */
 }
 
+ol.bjqs-markers li a:hover{
+  width: 15px;
+}
 ol.bjqs-markers li.active-marker a{
   background: #F90;
 }
