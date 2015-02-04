@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin:0;padding:0; vertical-align:middle;}
+@font-face { font-family:'NanumGothic';
+			src:url(../imgs/nanum.eot); 
+			src:local('☺'), url(../imgs/nanum.woff) format("woff") , url(../imgs/nanum.ttf) format("truetype");
+}
+body {
+	margin:0;
+	padding:0;
+	font-family: "Dotum", Arial,serif;
+	font-size: 1em;
+	color: #666;
+	background-color: #FFF;
+	background-image: url(../imgs/body_back.gif);
+	background-repeat: repeat-x;
+	background-position: top; 
+}
+img {border:none;}
+a {text-decoration: none;color: #666;}
+a:hover {color: #F60;text-decoration: none;}
+.clear {clear:both;}
+#wrap {width:995px;;margin:0 auto;padding:0;} 
+header {
+	margin-top:20px;
+}
+header #logo {
+	margin-left:10px;
+	float:left;
+}
+
+header #head_link {
+	float:right;
+	margin-right:10px;
+	font-size:0.75em;
+}
+header #head_link ul {
+	list-style:none;	
+}
+header #head_link li {
+	float:left;
+	padding:0 8px;
+	border-right:1px solid #999;
+}
+#head_link .no_line {
+	border-right:none;
+}
+
+header #search {
+	margin:0 10px 0 0; 
+	padding:0;
+	float:right;
+	margin-top:20px;
+}
+
+header #search .main_input {
+	width:260px;
+	height:22px;
+	border:#336699 3px solid;
+	padding:0 5px;
+}
+header #search .btn1 {
+	background-color:#369;
+	border:solid 1px #369;
+	color: #FFF;
+	height:28px;
+	width:55px;
+	margin-left:2px;
+} 
+
+
+/* 메인 메뉴 시작 */
+aside {float:left;width:205px;}
+
+nav {
+	margin:25px 0 0 10px;
+	font-size:0.8em;
+	font-family:'NanumGothic', Serif;
+}
+
+nav ul {list-style:none;}
+nav ul li {padding:5px 10px;text-transform: uppercase;}
+nav ul li a {display:block;}
+
+nav ul li h3 {
+	border:1px solid #CCC;
+	border-radius:20px;
+	padding:5px 20px;
+	font-size:14px;
+	text-transform: capitalize;
+	background-color: #e5e5e5;
+	background-image: url(../imgs/nav_back.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+nav ul li ul {margin:10px 0 0 0;} 
+nav ul li ul li {padding:0 0 0 20px;line-height: 2em;}
+
+/* 배너 및 공지사항 */
+
+
+aside #banner {margin:10px 15px;}
+
+#notice {margin:20px 0 15px 15px;font-size:0.75em;}
+#notice h2 {
+	font-family:'NanumGothic';
+	color: #336699;
+	font-size:1.2em;
+	border-bottom:1px solid #336699;
+	padding:2px 0 5px 10px;
+	background-image: url(../imgs/notice_h2.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#notice ul {list-style:none;margin:10px 0 0 0;}
+
+#notice ul li {
+	line-height:1.5em;
+	padding:0 0 0 7px;
+	background-image: url(../imgs/notice_li.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+
+
+
+/* article 부분 시작 */
+article {
+	width:775px;
+	float:right;
+	margin:20px 0 0 15px;
+}
+
+#bestseller, #dslr_lens, #laptop {
+	width:auto;
+	padding-top:7px;
+	font-size:0.75em;
+	
+}
+
+#bestseller h3, #dslr_lens h3, #laptop h3 {
+	border-bottom:1px solid #369;
+	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+	font-family:"NanumGothic", Serif;
+	font-size:1.2em;
+	color:#369;
+	text-transform: uppercase;
+}
+
+#bestseller .book {
+	width:188px;
+	text-align:center;
+	float:left;
+	background-image: url(../imgs/vline_grey.gif);
+	background-repeat: repeat-y;
+	background-position: right;
+	border:2px solid #FFF;
+}
+#bestseller .book img {
+	margin:5px 0 0 0;
+}
+
+#bestseller .book:hover {
+	border:2px solid #F00;
+	background-image:none;
+}
+
+#bestseller .book.no_back {
+	background-image:none;
+}
+
+#bestseller .book .sort, #bestseller .book .title, #bestseller .book .writer, #bestseller .book .price {
+	padding:2px 0;
+	margin:0;
+}
+
+#bestseller .book .sort {
+	margin-top:4px;
+}
+#bestseller .book .title {
+	font-weight:bold;
+}
+
+.link {
+	display:block;
+	position:absolute;
+	width: 188px;
+	height:230px;
+	z-index:2;
+}
+
+#dslr_lens .goods, #laptop .goods {
+	width:170px;
+	margin:5px 29px 5px 0;
+	border: 1px solid #999;
+	padding:15px 0;
+	float:left;
+	text-align:center;
+}
+
+
+#dslr_lens .goods.goods_right, #laptop .goods.goods_right {
+	float:right;
+	margin:5px 0 ;
+}
+
+
+#dslr_lens .goods .dslr_img, #laptop .goods .laptop_img {
+	height:110px;
+}
+
+#dslr_lens .goods .title, #dslr_lens .goods  .price {
+	padding:5px 0;
+	margin:0;
+}
+
+#dslr_lens ##laptop .title, #laptop .goods  .price {
+	padding:5px 0;
+	margin:0;
+}
+
+/* 여기는 배너 부분 */
+article #ad_main_banner, article #ad_sub_banner {
+	margin:10px 0;
+	
+}

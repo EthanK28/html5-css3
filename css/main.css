@@ -178,10 +178,143 @@ article {
 	margin: 20px 0 0 15px; /* 마진을 이용해서 위치 정렬*/
 }
 
-#bestseller {
-	width: auto;
+#bestseller, #dslr_lens, #laptop {
+	width: auto; /* 폭은 자동ㅇ로 완성되고 앞서 */
+	padding: 0 0 5px 0;
+	font-size: 0.75em;
 }
 
-#bestseller h3 {
-
+#bestseller h3, #dslr_lens h3, #laptop h3 {
+	border-bottom: 1px solid #369;
+	padding:0 0 5px 0;
+	margin: 10px 0 5px 0;
+	font-family: "NanumGothic", serif;
+	font-size: 1.2em;
+	color:#369;
+	text-transform: uppercase;
 }
+
+#bestseller .book {
+	width: 188px; /* 책의 폭 크기 설정 */
+	text-align: center; /* 텍스트 가운데 정렬 */
+	float:left; /* .book을 전부 왼쪽 정렬 */
+	background-image: url(../imgs/vline_grey.gif);
+	/* 배경 이미지를 이용해서 구분선 처리 */
+	background-repeat: repeat-y;
+	background-position: right;
+
+	/* Hover시에 어긋나지 않게 보이지 않는 테두리를 쳐준다*/
+	border: 2px solid #FFF;
+}
+
+#bestseller .book img {
+	margin: 5px 0 0 0;
+}
+
+#bestseller .book, #bestseller .book .title,
+#bestseller .book .writer, #bestseller .book .price {
+	padding: 2px 0; /*  .book 세부 정보들에 대한 그룹핑과 상하 2픽셀씨 패딩 적용 */
+	margin: 0;
+}
+
+#bestseller .book .sort {
+	margin-top: 4px;
+	/* .sort 부분만 상단 4픽셀 적용 세부 내용 전체적으로 4픽셀 적용 효과 */
+}
+
+#bestseller .book .title {
+	font-weight: bold;
+}
+
+#bestseller .book.no_back {
+	background-image: none;
+}
+
+#bestseller .book:hover {
+	border: 2px solid #F00;
+	background-image:none;
+}
+
+.link {
+	display: block;
+	position: absolute;
+	width: 188px;
+	height: 240px;
+	z-index: 2;
+	
+	text-indent: 10000px;
+}
+
+#dslr_lens .goods, #laptop .goods{
+	width: 170px;
+	margin: 5px 29px 5px 0;
+	border: 1px solid #999;
+	padding: 15px 0;
+	float: left;
+	text-align: center;
+}
+
+#dslr_lens .goods .dslr_img, #laptop .goods .laptop_img{
+	height: 110px; /*  이미지가 위치한곳의 높ㅇ이를 110 픽셀로 저장*/
+	
+}
+
+#dslr_lends .goods .title, #dslr_lens .goods .price {
+	padding: 5px 0;
+	margin: 0;
+}
+
+article #ad_main_banner, article #ad_sub_banner {
+	margin:10px 0;
+}
+
+#dslr_lens .goods.goods_right, #laptop .goods.goods_right {
+	float: right;
+	margin: 5px 0;
+}
+
+footer {
+	font-size: 0.75em;
+	margin: 10px 0 0 0;
+	background-image: url(../imgs/foo_back.gif);
+	background-repeat: repeat-x;
+	background-position: top;	
+}
+
+footer ul {
+	list-style: none;
+	margin: 0 0 0 210px;
+}
+
+footer ul li {
+	float:left;
+	font-family: 'NanumGothic', serif;
+	background-image: url(../imgs/foot_line.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+footer ul li a {
+	font-size: 1.1em;
+	display: block;
+	padding: 5px 15px;
+}
+
+footer ul li.no_line{
+	background-image: none;	
+}
+
+footer img {
+	margin: 10px 0 0 40px;
+	float: left;
+	width: 150px;
+}
+
+footer #foot_note {
+	margin: 10px 0 0 25px; /* 마진 이용 위치 설정함 */
+	line-height: 1.5em;	   /* foot_note에 있는 텍스트의 줄 간격 확대*/
+	float: left;		   /* foot_note 또한 왼쪽으로 float해서 로고 옆에 위치하게 됨*/
+	width: 600px;	  	   /* foot_note의 크기를 정함*/
+	padding: 0 0 20px;
+}
+
