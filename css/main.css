@@ -1,0 +1,187 @@
+* {
+	margin:0; padding:0; vertical-align: middle;
+}
+
+@font-face {
+	font-family: 'NanumGothic'; /* 폰트 이름을 정의해 줍니다. 여기서는 */
+	src:url(../imgs/nanum.eot); /* IE 하위 버전을 위한 eot 파일 경로 설정 */
+	src:local('@'), url(../imgs/nanum.woff) format("woff"),
+	url(../imgs/nanum.ttf) format("truetype");
+	/* true type font 파일 경로 설정	 */
+
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family: "Dotum", Arial.serif;
+	font-size: 1em;
+	color: #666;
+	background-color: #FFF;
+	/* 선긋기 */
+	background-color: #FFF; /* 배경색을 흰색으로 */
+	background-image: url(../imgs/body_back.gif); /* 배경 이미지 적용 */
+	background-repeat: repeat-x; /* X축으로 반복 */
+	background-position: top; /* 배경 이미지 위치 지정 */
+}
+
+img {border:none;}
+a {text-decoration: none; color:#666;}
+a:hover {color: #F60; text-decoration: none;}
+.clear {clear:both;}
+/* 기본 세팅 끝*/
+
+/* 전체 홈페이지 폭설정 */
+#wrap {
+	width: 995px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+/* index.php 세팅 */
+header {
+	margin-top: 20px;
+}
+
+header #logo {
+	margin-left: 10px;
+	float:left;
+}
+
+header #head_link {
+	float: right;
+	margin-right: 10px;
+	font-size: 0.75em;
+}
+
+header #head_link ul {
+	list-style: none; /* 리스트 스타일 제거*/
+}
+
+header #head_link li {
+	float: left;
+	padding:0 20px;
+	border-right: 1px solid #999; /* 각 메뉴사이에 구분선 적용*/
+}
+
+header #head_link .no_line {border-right: none;}
+
+header #search {
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-top:20px;
+	margin-right: 10px;
+}
+
+header #search .main_input {
+	width: 260px;
+	height: 22px;
+	border: #336699 3px solid;
+	padding: 0 5px;
+}
+
+header #search .btn1{
+	background-color: #369;
+	border: solid 1px #369;
+	color: #FFF;
+	height: 28px;
+	width: 55px;
+	margin-left: 4px;
+}
+
+/* 메인 메뉴 시작 */
+
+aside {
+	float:left; /* 왼쪽으로 배치 */
+	width: 205px; /* aside 폭의 크기 설정 */
+}
+
+nav {
+	margin: 25px 0 0 10px; /* 상단 25픽셀 왼쪽으로 10픽셀의 공간적 여유 */
+	font-size: 0.8em; /* 폰트 크기를 설정합니다. 기본 폰트 크기에서 0.8 em은 약 13픽셀 */
+	font-family: 'NanumGothic'; /* @font-face에서 정의된 나눔고딕*/
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	padding: 5px 10px; text-transform: uppercase;
+}
+
+nav ul li h3 {
+	border: 1px solid #CCC; /* 테두리 속성 지정 */
+	width:50%;
+	border-radius: 20px; /* border-radius 값을 조정 */
+	padding: 5px 20px; /* 패딩값을 조절하여 상단 5픽셀 좌우 20픽셀의 값을 설정 */
+	font-size: 14px; /* 폰트의 크기를 설정 */	
+	text-transform: capitalize; /* 영문 첫 글자만 대문자로 */
+	background-color: #e5e5e5; /* 배경 색상 설정 */
+	background-image: url(../imgs/nav_back.jpg);
+	background-repeat: repeat-x; /* 배경 이미지를 X 룩으로 반복 */
+}
+
+nav ul li ul li {
+	padding: 0 0 0 30px; /* 왼쪽으로 패딩 20픽셀 적용*/
+	line-height: 2em; /* 각 메뉴간의 간격을 2em 값으로 적용 */
+}
+
+nav ul li ul {
+	margin: 5px 0 0 0; /* 마진값을 벌려서 간격을 조정해줌*/
+
+}
+
+nav ul li a:hover { text-indent: 30px;}
+
+aside #banner {
+	margin:10px 15px;
+}
+
+#notice {
+	margin: 20px 0 15px 15px;
+	font-size: 0.75em;
+}
+
+#notice h2 {
+	font-family: 'NanumGothic';
+	color: #336699; /* 색상 적용 */
+	font-size: 1.1em;
+	border-bottom: 1px solid #336699;
+	padding: 2px 0 5px 10px;
+	background-image: url(../imgs/notice_h2.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+
+}
+
+#notice ul {
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+
+#notice ul li {
+	line-height: 1.2em;
+	padding: 0 0 0 7px; /* 패딩을 용하여 7픽셀 정도 여백처리*/
+	background-image: url(../imgs/notice_li.gif);
+	/* 배경 이용 리스트 이미지 변경 */
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* 메인화면 아티클 부분 */
+article {
+	width: 775px; /* article 부분에 대한 폭 크기 설정 */
+	float:right; /* 오른쪽으로 정돈 */
+	margin: 20px 0 0 15px; /* 마진을 이용해서 위치 정렬*/
+}
+
+#bestseller {
+	width: auto;
+}
+
+#bestseller h3 {
+
+}
