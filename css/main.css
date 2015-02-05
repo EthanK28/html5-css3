@@ -448,8 +448,142 @@ section#new_book #carousel_ul {
 	padding-bottom: 10px;
 }
 
-section#newbook #left_scroll, section#new_book #right_scroll {
+section#new_book #left_scroll, section#new_book #right_scroll{
+	float:left; 
+	width:14px;
+	padding-top:70px; 
+}
+
+article #sorting {
+	width:auto;
+	float:right;
+	margin:10px 0 5px 0;
+	font-size:0.75em;
+}
+
+article #sorting li {
+	list-style: none;
+}
+
+article #sorting ul li {
 	float: left;
-	width: 14px;
-	padding-top: 70px;
+}
+
+article #sorting ul li a {
+	display:block;
+	padding: 0 8px;
+	border-right:2px solid #999;
+}
+
+/* 제품 상세 css */
+article table#list_view {
+	width: 100%;  /* 테이블의 크기를 100%로 만든다? */
+	border-collapse: collapse;  /* 테이블에서 cellpadding="0" cellspacing="0" */
+	border-top: 2px solid #333;
+	font-size: 0.75em;
+	color: #333;
+	margin-top: 20px;
+}
+
+article table#list_view td {
+	padding:10px 0;	/* td 내부 상 하단으로 10픽셀 여백 적용 */
+	margin: 0;
+	border-bottom: 1px dotted #999; /* td 하단으로 점선 적용 */
+
+}
+
+article table#list_view h2 {
+	font-size: 1.2em;
+	padding: 0 0 2px 0;
+	font-weight: bold;
+}
+
+article table#list_view td.goods_image{
+	width: 80px; /* 제품 이미지가 들어가는 곳의 넓이를 80픽셀로 */
+	
+}
+
+article table#list_view td.goods_description {
+	padding: 2px 5px;
+	color: #36F;
+}
+
+article table#list_view td.goods_description p {
+	line-height: 1.2em;
+}
+
+article table#list_view td.price {
+	width: 70px;
+	padding: 0 0 0 10px;
+}
+
+article table#list_view td.price span {
+	text-decoration: line-through; /* 소비자 부분에만 취소선 적용 */
+}
+
+article table#list_view td.price strong {
+	font-weight: bold;
+	color: #F00;
+}
+
+article table#list_view td.buy_btns {
+	width: 80px;
+	padding-left: 5px;
+}
+
+article table#list_view td.buy_btns ul {
+	list-style: none;
+}
+
+article table#list_view td.buy_btns ul li a {
+	padding: 5px 12px;
+	text-align: center;
+	display: block; /* 버튼 이미지를 만들기 위해서 display:block; 적용 \ */
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+
+article table#list_view td.buy_btns ul li a:hover{
+	background-color: #003306;
+	color: #FFF;
+}
+
+/* 페이지 컨트롤 */
+article #page_wrap {
+	width: 400px;
+	margin: 10px auto 50px auto;
+	/*상단과 하단 간격을 조절하고 중간에 위치하기 위해 좌우로 auto 값을 지정했습니다 */
+}
+
+article ul#page_control {
+	font-size: 11px;
+	padding: 0;
+	list-style: none;
+}
+
+article ul#page_control li {
+	padding: 0 5px;
+	float: left;
+}
+
+article ul#page_control li a {
+	display: block; 
+	padding: 2px 5px; /* 내부 패딩 조절 */
+	border: 1px solid #ccc;
+}
+
+article ul#page_control li a:hover {
+	color:#f00;
+	border:1px solid #f00;
+}
+
+article ul#page_control li a.no_border {
+	border:none;
+	padding-top: 3px;
+}
+
+article ul#page_control li .page_contrl_active {
+	background: #FFF;
+	color: #F00;
+	border: 1px solid #f00;
 }
