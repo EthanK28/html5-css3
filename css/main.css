@@ -379,3 +379,77 @@ footer #foot_note {
 	padding: 5px 0;
 	background-image: none;
 }
+
+article hgroup {
+	margin: 10px 0;
+}
+
+article h1 {
+	font-size: 1.1em;
+	padding: 0 0 5px 0;
+	font-family: 'NanumGothic';
+	border-bottom: 2px solid #666;
+	letter-spacing: 2px;
+}
+
+article h2 {
+	font-weight: normal;
+	font-size: 0.75em;
+	padding-top: 5px; /* h1과 h2의 사이 간격 조절 */
+}
+
+section#new_book {
+	width: auto;
+	padding: 7px 10px;	
+	margin-top:10px;
+	font-size: 0.75em;	
+	border:1px solid #666;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+section#new_book ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 10px;
+}
+
+section#new_book li {
+	float:left;
+	width: 135px;
+	padding:0px;
+	margin:10px 5px;
+}
+
+section#new_book h3 {
+	padding: 0 0 5px 0;
+	margin: 0 0 5px 0;
+	text-indent: -7000px; /* text-indent를 -7000 픽셀 적용하여 글자를 감춤 */
+	background-image: url(../imgs/list_box_title.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 24px;
+}
+
+section#new_book #carousel_inner {
+	float:left;
+	width: 725px; /* 여기서 잡아주는 넓이만큼 책이 보이게된다 */
+	overflow: hidden;
+}
+
+section#new_book #carousel_ul {
+	position:relative;
+	left:-135px;
+	list-style: none;
+	margin:0px;
+	padding: 0px;
+	width: 9999px;
+	padding-bottom: 10px;
+}
+
+section#newbook #left_scroll, section#new_book #right_scroll {
+	float: left;
+	width: 14px;
+	padding-top: 70px;
+}
