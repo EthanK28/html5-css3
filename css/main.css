@@ -678,3 +678,103 @@ article h4 {font-size:0.8em; font-weight: normal;}
 #detail_table ul li a.buy:hover, #detail_table ul li a.cart:hover, #detail_table ul li a.wish:hover{
 	color: #000; background-color: #Fc0;
 }
+
+#container {
+	width: 100%;
+	margin: 40px auto;
+}
+
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #F00;
+	width: 100%;
+}
+
+ul.tabs li {
+	float: left;
+	padding: 0;
+	margin: 0 1px;
+	/* 탭 메뉴들 간의 간격을 벌려 준다 이부분은 직접 값을 변경한다. */
+	height: 31px; /* 여기서 높이를 지정해 줍니다. */
+	line-height: 31px;
+	border: 1px solid #999;
+	border-bottom-color: #F00; /* 하단 테두리의 색을 빨간색으로 처리 */
+	overflow: hidden; /* overflow 처리를 hidden으로 처리하여 넘어가는 부분을 감춘다*/
+	background-color: #F5F5F5;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 20px;
+	outline: none; /* outline은 none으로 해야 마우스 클릭시 점선이 생기지 않습니다.*/
+}
+
+ul.tabs li a:hover{
+	background-color: #CAE4FF;
+}
+
+ul.tabs li.active, ul.tabs li.active a:hover {
+	/* 이 부분이 active 상태와 active 상태에서 마우스 오버시 효과를 지정해 주는 곳입니다.*/
+	background: #fff;
+	border-color: #f00;
+	border-bottom: 2px solid #fff;
+	/* 여기서 하단 테두리를 2픽샐 하얀색으로 지정해서 빨간색 테두리를 감춘다*/
+}
+
+/* 탭 메뉴 내부 내용 부분 */
+.tab_container {
+	border-top: none; 
+	clear:both; 
+	float:left; 
+	width:100%; 
+	background: #fff; 
+
+}
+.tab_content {
+	padding: 10px 10px 20px 10px;
+	min-height:400px;
+	font-size:0.75em;
+	line-height:1.8em;
+}
+
+
+.tab_content h4 {
+	margin:10px 0;
+	padding: 20px 0 5px 35px;
+	font-family:'NanumGothic', Serif;
+	font-size:16px;
+	font-weight:bold;
+	color: #FFF;
+	background-image: url(../imgs/h4_back.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height:30px;
+	letter-spacing:4px;
+}
+
+.tab_content p {
+	margin:10px 0 0 0;
+}
+.tab_content img {
+	margin: 10px;
+	padding: 5px;
+}
+
+.tab_content .writer {
+	margin:10px 0;
+	border-bottom:1px solid #F90;
+	padding:5px;
+	font-size:1.2em;
+	color:#000;
+	font-weight:bold;	
+}
