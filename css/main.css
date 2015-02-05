@@ -587,3 +587,94 @@ article ul#page_control li .page_contrl_active {
 	color: #F00;
 	border: 1px solid #f00;
 }
+
+/* 제품 디테일 페이지 */
+article h3, article h4 {
+	margin: 5px 0;
+}
+
+article h3 {
+	font-size: 1em; color:#0099FF;
+}
+
+article h4 {font-size:0.8em; font-weight: normal;}
+
+#goods_image, #detail_table {
+	margin:10px 0 0 0;
+
+}
+
+#goods_image {float: left;} /* #goods_image는 화면의 왼쪽에 위치함 */
+#goods_image figure {width: auto; text-align: center; padding: 0 30px 0 0;}
+#goods_image figure img {
+	width: 150px;
+	height: auto;
+	border: 1px solid #fff; /* 책의 테두리 효과 */
+	box-shadow: 1px 1px 30px red;
+}
+
+#detail_table {
+	float: left;
+	font-size: 0.75em;
+	width: 590px;
+}
+
+#detail_table table{
+	width: 95%;
+	border-collapse: collapse;
+	border-top: 2px solid #333;
+	border-bottom: 1px solid #333
+}
+
+#detail_table table td {
+	padding: 7px 0 7px 10px;
+}
+
+#detail_table table tr.dot_line {
+	border-bottom: 1px dotted #666;
+}
+
+#detail_table table td.fixed{width: 110px; font-weight: bold;}
+
+#detail_table table td span {font-size: 1.2em; font-weight: bold; font-family: 'NanumGothic', serif;}
+
+#detail_table ul {list-style: none; margin: 20px 0 0 0;}
+
+#detail_table ul li {float: left; padding: 0 10px;}
+
+#detail_table ul li a {
+	display: block;
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	padding-top: 7px;
+	border: 2px solid #999;
+	border-radius: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: 'NanumGothic', serif;
+}
+
+#detail_table ul li a.buy, #detail_table ul li a.cart, #detail_table ul li a.wish {
+	background-repeat: no-repeat;
+	background-position: 15px center;
+}
+
+#detail_table ul li a.buy {
+	color:#FF0000;
+	border-color: #FF0000;
+	background-image: url(../imgs/check.png);
+}
+
+#detail_table ul li a.cart {
+	background-image: url(../imgs/cart.png);
+}
+]
+
+#detail_table ul li a.wish {
+	background-image: url(../imgs/wish.png);
+}
+
+#detail_table ul li a.buy:hover, #detail_table ul li a.cart:hover, #detail_table ul li a.wish:hover{
+	color: #000; background-color: #Fc0;
+}
